@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["/Users/thibautduchene/Code/five-website/src/actions/fillheight.ts"],
+  "sourcesContent": ["export function fillheight(node, options) {\n  function handleFillHeight() {\n    const viewportHeight = window.innerHeight;\n    const rect = node.getBoundingClientRect();\n    node.style.height =\n      viewportHeight -\n      rect.top -\n      ((options && options.marginBottom) || 0) +\n      \"px\";\n  }\n  handleFillHeight();\n\n  window.addEventListener(\"resize\", handleFillHeight);\n  return {\n    destroy() {\n      window.removeEventListener(\"resize\", handleFillHeight);\n    },\n  };\n}\n"],
+  "mappings": "AAAO,2BAAoB,MAAM;AAC/B;AACE,UAAM,iBAAiB,OAAO;AAC9B,UAAM,OAAO,KAAK;AAClB,SAAK,MAAM,SACT,iBACA,KAAK,MACH,YAAW,QAAQ,gBAAiB,KACtC;AAAA;AAEJ;AAEA,SAAO,iBAAiB,UAAU;AAClC,SAAO;AAAA,IACL;AACE,aAAO,oBAAoB,UAAU;AAAA;AAAA;AAAA;",
+  "names": []
+}
