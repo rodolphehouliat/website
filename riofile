@@ -1,5 +1,5 @@
 services:
-  majordom-graphql:
+  five-website:
     build:
       repo: https://github.com/five-exchange/website.git
       branch: main
