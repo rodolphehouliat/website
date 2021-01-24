@@ -2,8 +2,8 @@ FROM node:12-alpine
 
 COPY . /app
 WORKDIR /app
-ENV NODE_ENV production
 RUN npm install
+ENV NODE_ENV production
 RUN npm run tailwind
 # RUN npm run build
 EXPOSE 3000
