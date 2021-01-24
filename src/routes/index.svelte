@@ -1,5 +1,5 @@
 <script>
-  import { fillheight, scrolltoanchor } from "../actions";
+  import { fillheight, scrolltoanchor } from "$actions";
 
   let windowheight;
 </script>

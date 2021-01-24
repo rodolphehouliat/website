@@ -19,7 +19,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"$components/*": ["./src/components/*"],
-			"$actions/*": ["./src/actions/*"]
+			"$actions/*": ["src/routes/actions/*"]
 		}
 	},
 	"include": ["src/**/*"],
