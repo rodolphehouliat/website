@@ -1,12 +1,12 @@
 <script>
-  import { fillheight, scrolltoanchor } from "$actions";
-
+  import { fillheight, scrolltoanchor, send, receive } from "$actions";
+  let path;
   let windowheight;
 </script>
 
 <svelte:window bind:innerHeight={windowheight} />
 
-<main use:scrolltoanchor>
+<main use:scrolltoanchor on:path={(e) => (path = e.detail)}>
   <a id="#main" class="flex items-center justify-center" use:fillheight>
     <div class="h-1/3 w-1/3">
       <h1 class="text-primary text-3xl mb-12">Unleash your value</h1>
@@ -23,11 +23,17 @@
   </a>
 
   <a id="#brand" class="flex items-center" style={`height: ${windowheight}px`}>
-    <ul class="h-1/3 w-1/3 p-4">
-      <li class="text-primary text-xl">Rethinking brands worth</li>
-      <li>Hyperconnected market</li>
-      <li>Boost your money</li>
-    </ul>
+    {#if path == "#brand"}
+      <ul
+        class="h-1/3 w-1/3 p-4"
+        in:receive={{ key: "menu" }}
+        out:send={{ key: "menu" }}
+      >
+        <li class="text-primary text-xl">Rethinking brands worth</li>
+        <li>Hyperconnected market</li>
+        <li>Boost your money</li>
+      </ul>
+    {/if}
     <div
       class="border-primary flex flex-col justify-between rounded-lg border-2 h-2/3 w-1/2 p-12"
     >
@@ -57,11 +63,17 @@
     id="#connected"
     class="flex items-center"
     style={`height: ${windowheight}px`}>
-    <ul class="h-1/3 w-1/3 p-4">
-      <li>Rethinking brands worth</li>
-      <li class="text-primary text-xl">Hyperconnected market</li>
-      <li>Boost your money</li>
-    </ul>
+    {#if path == "#connected"}
+      <ul
+        class="h-1/3 w-1/3 p-4"
+        in:receive={{ key: "menu" }}
+        out:send={{ key: "menu" }}
+      >
+        <li>Rethinking brands worth</li>
+        <li class="text-primary text-xl">Hyperconnected market</li>
+        <li>Boost your money</li>
+      </ul>
+    {/if}
     <div
       class="border-primary flex flex-col justify-between rounded-lg border-2 h-2/3 w-1/2 p-12"
     >
@@ -86,11 +98,17 @@
   </a>
 
   <a id="#boost" class="flex items-center" style={`height: ${windowheight}px`}>
-    <ul class="h-1/3 w-1/3 p-4">
-      <li><a href="#brand">Rethinking brands worth</a></li>
-      <li>Hyperconnected market</li>
-      <li class="text-primary text-xl">Boost your money</li>
-    </ul>
+    {#if path == "#boost"}
+      <ul
+        class="h-1/3 w-1/3 p-4"
+        in:receive={{ key: "menu" }}
+        out:send={{ key: "menu" }}
+      >
+        <li><a href="#brand">Rethinking brands worth</a></li>
+        <li>Hyperconnected market</li>
+        <li class="text-primary text-xl">Boost your money</li>
+      </ul>
+    {/if}
     <div
       class="border-primary flex flex-col justify-between rounded-lg border-2 h-2/3 w-1/2 p-12"
     >

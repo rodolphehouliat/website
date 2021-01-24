@@ -34,18 +34,23 @@ export function scrolltoanchor(node, options) {
         behavior: "smooth",
       });
       window.location.href = links[currentLink].id;
+      node.dispatchEvent(
+        new CustomEvent("path", { detail: links[currentLink].id })
+      );
     }
   }
 
   function navigatedown() {
     if (currentLink < links.length - 1) {
-      console.log(currentLink, links.length);
       currentLink = currentLink + 1;
       window.scrollTo({
         top: links[currentLink].offsetTop,
         behavior: "smooth",
       });
       window.location.href = links[currentLink].id;
+      node.dispatchEvent(
+        new CustomEvent("path", { detail: links[currentLink].id })
+      );
     }
   }
 
