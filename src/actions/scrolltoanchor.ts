@@ -3,7 +3,7 @@ export function scrolltoanchor(node, options) {
   // left: 37, up: 38, right: 39, down: 40,
   // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
   var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
+  console.log(node);
   let scrolling = false;
   let previousevent = null;
   let currentLink = 0;

@@ -12,8 +12,8 @@
       <h1 class="text-primary text-3xl mb-12">Unleash your value</h1>
       <div class="rounded-full" />
       <p>
-        Rethinking brands worth via an hyperconnected market that boost your
-        money
+        Rethinking a brand's worth via an hyperconnected market that lets you
+        buy more for less
       </p>
     </div>
     <div class="absolute text-center bottom-0 w-full p-8">
@@ -29,9 +29,9 @@
         in:receive={{ key: "menu" }}
         out:send={{ key: "menu" }}
       >
-        <li class="text-primary text-xl">Rethinking brands worth</li>
+        <li class="text-primary text-xl">Rethinking a brand's worth</li>
         <li>Hyperconnected market</li>
-        <li>Boost your money</li>
+        <li>Buy more for less</li>
       </ul>
     {/if}
     <div
@@ -39,20 +39,22 @@
     >
       <h1 class="text-2xl">Drive your brand</h1>
       <div>
-        <p>Your customer decide what your brand is worth</p>
+        <p>Transform your brand into coins</p>
+        <br />
+        <p>Your customer decides what your brand is worth</p>
         <br />
         <p>You decide how your brand is perceived on the market</p>
         <br />
         <p>
           Your coins can be traded on a public decentralized platform with any
-          other brand or currencies
+          other brand or currency
         </p>
         <br />
         <p>
           Increase or decrease the coins quantity relative to the market demand
         </p>
         <br />
-        <p>Reward your customer with coins</p>
+        <p>Keep your customers coming back by rewarding them with coins</p>
         <br />
       </div>
       <div />
@@ -69,9 +71,9 @@
         in:receive={{ key: "menu" }}
         out:send={{ key: "menu" }}
       >
-        <li>Rethinking brands worth</li>
+        <li>Rethinking a brand's worth</li>
         <li class="text-primary text-xl">Hyperconnected market</li>
-        <li>Boost your money</li>
+        <li>Buy more for less</li>
       </ul>
     {/if}
     <div
@@ -104,9 +106,9 @@
         in:receive={{ key: "menu" }}
         out:send={{ key: "menu" }}
       >
-        <li><a href="#brand">Rethinking brands worth</a></li>
+        <li><a href="#brand">Rethinking a brand's worth</a></li>
         <li>Hyperconnected market</li>
-        <li class="text-primary text-xl">Boost your money</li>
+        <li class="text-primary text-xl">Buy more for less</li>
       </ul>
     {/if}
     <div
