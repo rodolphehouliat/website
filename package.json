@@ -1,23 +1,26 @@
 {
-	"name": "five-website",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "svelte-kit dev",
-		"tailwind": "npx tailwindcss-cli@latest build ./src/tailwind.css -o ./static/tailwind.css",
-		"build": "svelte-kit build",
-		"start": "svelte-kit start"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-node": "next",
-		"@sveltejs/kit": "next",
-		"@sveltejs/snowpack-config": "next",
-		"svelte": "^3.29.0",
-		"typescript": "^4.0.0",
-		"tslib": "^2.0.0",
-		"svelte-preprocess": "^4.0.0",
-		"@snowpack/plugin-typescript": "^1.2.1"
-	},
-	"dependencies": {
-		"tailwindcss": "^2.0.2"
-	}
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^1.3.4",
+    "svelte": "^3.31.2",
+    "svelte-loader": "^3.0.0",
+    "svelte-preprocess": "^4.6.9",
+    "ts-loader": "^8.0.17",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack serve --content-base public"
+  },
+  "dependencies": {
+    "b64-to-blob": "^1.2.19",
+    "hotkeys-js": "^3.8.2",
+    "svelte-sheets": "file:..",
+    "xlsx": "^0.16.9"
+  }
 }
