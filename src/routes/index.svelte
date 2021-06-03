@@ -1,9 +1,3 @@
-<script>
-  import { fillheight, scrolltoanchor, send, receive } from "src/actions";
-  let path;
-  let windowheight;
-</script>
-
 <div class="flex justify-between mx-auto p-8 max-w-7xl font-bold">
   <div class="flex text-2xl items-center">
     <div class="five-icon" />
@@ -30,11 +24,19 @@
   <div class="background-image absolute" />
 </segment>
 
-<footer class="fixed bottom-0 w-full">
-  <div class="fle h-10">
-    <i class="fab fa-github " />
-    <i />
-    <i />
+<footer class="fixed bottom-0 w-full p-8">
+  <div class="flex justify-start max-w-7xl mx-auto">
+    <span
+      class="p-4 px-8 flex items-center space-x-4 text-2xl"
+      style="background-color: whitesmoke;"
+    >
+      <i class="fab fa-github" />
+      <i class="fab fa-medium-m" />
+      <i class="fab fa-twitter" />
+      <i class="fab fa-discord" />
+      <i class="fab fa-telegram-plane" />
+      <i class="fab fa-reddit-alien" />
+    </span>
   </div>
 </footer>
 

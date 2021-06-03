@@ -1,0 +1,8 @@
+services:
+  five-website:
+    build:
+      repo: https://github.com/five-exchange/website.git
+      branch: main
+      cloneSecretName: gitcredential
+    ports:
+      - 3000:3000/http
