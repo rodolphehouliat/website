@@ -1,5 +1,5 @@
 <script>
-  import { fillheight, scrolltoanchor, send, receive } from "$actions";
+  import { fillheight, scrolltoanchor, send, receive } from "src/actions";
   let path;
   let windowheight;
 </script>
@@ -64,7 +64,8 @@
   <a
     id="#connected"
     class="flex items-center"
-    style={`height: ${windowheight}px`}>
+    style={`height: ${windowheight}px`}
+  >
     {#if path == "#connected"}
       <ul
         class="h-1/3 w-1/3 p-4"

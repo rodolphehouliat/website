@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.input {
+  @apply border-primary rounded-md w-full outline-none;
+}
+
+.btn {
+  @apply rounded-full px-4 py-2 bg-secondary text-white;
+}

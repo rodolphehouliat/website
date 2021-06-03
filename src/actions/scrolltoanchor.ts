@@ -3,6 +3,9 @@ export function scrolltoanchor(node, options) {
   // left: 37, up: 38, right: 39, down: 40,
   // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
   var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+  node.style.height = window.innerHeight + "px";
+  node.style.overflowY = "hidden";
   console.log(node);
   let scrolling = false;
   let previousevent = null;
@@ -11,6 +14,7 @@ export function scrolltoanchor(node, options) {
 
   function preventDefault(e) {
     e.preventDefault();
+    console.log(e);
     if (previousevent && Date.now() - previousevent < 100) {
       previousevent = Date.now();
       return (previousDelta = Math.abs(e.deltaY));
@@ -29,7 +33,7 @@ export function scrolltoanchor(node, options) {
   function navigateup() {
     if (currentLink != 0) {
       currentLink = currentLink - 1;
-      window.scrollTo({
+      node.scrollTo({
         top: links[currentLink].offsetTop,
         behavior: "smooth",
       });
@@ -56,17 +60,6 @@ export function scrolltoanchor(node, options) {
 
   // modern Chrome requires { passive: false } when adding event
   var supportsPassive = false;
-  try {
-    window.addEventListener(
-      "test",
-      null,
-      Object.defineProperty({}, "passive", {
-        get: function () {
-          supportsPassive = true;
-        },
-      })
-    );
-  } catch (e) {}
 
   var wheelOpt = supportsPassive ? { passive: false } : false;
   var wheelEvent =
@@ -79,16 +72,13 @@ export function scrolltoanchor(node, options) {
     Object.values(document.getElementsByTagName("a")) || []
   ).filter((a) => a.id);
   // call this to Disable
-  window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
-  window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+  node.addEventListener(wheelEvent, preventDefault, false); // older FF
   return {
     destroy: () => {
-      window.removeEventListener("DOMMouseScroll", preventDefault, false);
-      window.removeEventListener(wheelEvent, preventDefault, false);
-      window.removeEventListener("touchmove", preventDefault, false);
-      window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+      node.removeEventListener("DOMMouseScroll", preventDefault, false);
+      node.removeEventListener(wheelEvent, preventDefault, false);
+      node.removeEventListener("touchmove", preventDefault, false);
+      node.removeEventListener("keydown", preventDefaultForScrollKeys, false);
     },
   };
 }

@@ -7,7 +7,9 @@
     <div class="flex items-center text-primary text-lg">
       <div
         class=" font-bold mr-4 border-primary p-3 flex border-4 rounded-full w-6 h-6 justify-center items-center"
-      >5</div>
+      >
+        5
+      </div>
       Five
     </div>
     <div class="flex space-x-2 text-primary">
