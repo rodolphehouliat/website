@@ -12,6 +12,11 @@ module.exports = {
       black: "black",
       white: "white",
     },
+    fontFamily: {
+      display: ["Nunito", "sans-serif"],
+      body: ["Nunito", "sans-serif"],
+      // sans: ["Montserrat", "Nunito", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
