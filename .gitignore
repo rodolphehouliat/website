@@ -1,7 +1,6 @@
+/.svelte-kit
 .DS_Store
 node_modules
-/.svelte-kit
-# /.svelte/assets
-# /.svelte/build/optimized
-/build
-/functions
+public/bundle.*
+package-lock.json
+yarn.lock

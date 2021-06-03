@@ -4,8 +4,11 @@ module.exports = {
 
   theme: {
     colors: {
-      primary: "#142550",
-      secondary: "#ed7528",
+      primary: "#fa6400",
+      secondary: "#142450",
+      orange: "#f9a826",
+      beige: "#e2dbd2",
+      gray: "#535461",
       black: "black",
       white: "white",
     },
