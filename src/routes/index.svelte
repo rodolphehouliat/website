@@ -55,7 +55,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     left: 35%;
-    top: -13vh;
+    /* top: 0vh; */
     height: 80vh;
     width: 60vw;
   }
