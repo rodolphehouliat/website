@@ -1,5 +1,5 @@
 <segment class="flex relative px-8 w-full">
-  <div class="w-2/5 sm:w-full font-bold" style="height: 50vh;">
+  <div class="w-2/5 sm:w-full font-bold pt-15 z-10" style="height: 50vh;">
     <h1 class="text-5xl py-4 font-extrabold">
       Crypto loyalty point for your e-shop
     </h1>
@@ -10,7 +10,7 @@
       Create your crypto
     </button>
   </div>
-  <div class="background-image absolute sm:left-0! sm:w-full" />
+  <div class="background-image absolute sm:hidden" />
 </segment>
 
 <style>
