@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
+		"@fontsource/inter": "^4.4.2",
 		"@fontsource/nunito": "^4.4.2",
 		"@fortawesome/fontawesome-free": "^5.15.3",
 		"@lukeed/uuid": "^2.0.0",

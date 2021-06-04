@@ -13,8 +13,8 @@ module.exports = {
       white: "white",
     },
     fontFamily: {
-      display: ["Nunito", "sans-serif"],
-      body: ["Nunito", "sans-serif"],
+      display: ["Inter", "sans-serif"],
+      body: ["Inter", "sans-serif"],
       // sans: ["Montserrat", "Nunito", "sans-serif"],
     },
     extend: {},

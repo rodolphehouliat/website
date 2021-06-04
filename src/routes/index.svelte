@@ -1,7 +1,7 @@
 <div class="flex justify-between mx-auto p-8 max-w-7xl font-bold">
-  <div class="flex text-2xl items-center">
+  <div class="flex text-2xl items-center font-extrabold">
     <div class="five-icon" />
-    Five
+    <strong class="text-3xl">five</strong>
   </div>
   <div class="flex space-x-2 items-center justify-around w-1/3">
     <button class="px-8 py-2">How it works</button>
@@ -13,11 +13,13 @@
 
 <segment class="flex max-w-7xl mx-auto mt-28 px-8 relative">
   <div class="w-2/5 font-bold" style="height: 50vh;">
-    <h1 class="text-5xl py-4">Crypto loyalty point for your e-shop</h1>
+    <h1 class="text-5xl py-4 font-extrabold">
+      Crypto loyalty point for your e-shop
+    </h1>
     <h3 class="font-extralight text-2xl">
       The new crypto loyalty point marketplace built on the Web 3.0
     </h3>
-    <button class="bg-primary text-white py-2 px-4 rounded-md mt-28 font-bold">
+    <button class="bg-primary text-white py-2 px-8 rounded-md mt-16 font-bold">
       Create your crypto
     </button>
   </div>
@@ -45,8 +47,8 @@
     background-image: url("/favicon.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
   .background-image {
     background-image: url("/background.svg");

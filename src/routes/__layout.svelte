@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>- Five</title>
+  <title>five</title>
 </svelte:head>
 
 <slot />

@@ -4010,11 +4010,11 @@ video {
 }
 
 .font-display {
-  font-family: Nunito, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .font-body {
-  font-family: Nunito, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .font-thin {
@@ -18325,7 +18325,7 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
-@import "@fortawesome/fontawesome-free/css/all.css";
+/* @import "@fortawesome/fontawesome-free/css/all.css"; */
 
 .input {
   --tw-border-opacity: 1;
@@ -21808,11 +21808,11 @@ video {
   }
 
   .sm\:font-display {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .sm\:font-body {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .sm\:font-thin {
@@ -39413,11 +39413,11 @@ video {
   }
 
   .md\:font-display {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .md\:font-body {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .md\:font-thin {
@@ -57018,11 +57018,11 @@ video {
   }
 
   .lg\:font-display {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .lg\:font-body {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .lg\:font-thin {
@@ -74623,11 +74623,11 @@ video {
   }
 
   .xl\:font-display {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .xl\:font-body {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .xl\:font-thin {
@@ -92228,11 +92228,11 @@ video {
   }
 
   .\32xl\:font-display {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .\32xl\:font-body {
-    font-family: Nunito, sans-serif;
+    font-family: Inter, sans-serif;
   }
 
   .\32xl\:font-thin {
