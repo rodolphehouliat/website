@@ -6,3 +6,11 @@ services:
       cloneSecretName: gitcredential
     ports:
       - 3000:3000/http
+  five-website-dev:
+    build:
+      repo: https://github.com/five-exchange/website.git
+      branch: develop
+      cloneSecretName: gitcredential
+    ports:
+      - 3000:3000/http
+
