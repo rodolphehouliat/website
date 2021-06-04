@@ -9,6 +9,7 @@ RUN npm ci
 COPY . .
 
 RUN npm run build
+RUN npm run tailwind
 
 ###
 # Only copy over the Node pieces we need

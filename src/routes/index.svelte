@@ -56,7 +56,7 @@
     background-size: contain;
     left: 35%;
     /* top: 0vh; */
-    height: 80vh;
+    height: 60vh;
     width: 60vw;
   }
 </style>
